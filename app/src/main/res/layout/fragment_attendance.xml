@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="jp.co.proaxia_consulting.proaxiacom.AttendanceFragment">
+
+    <jp.co.proaxia_consulting.proaxiacom.view.MotionableScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView02"
+        android:soundEffectsEnabled="true"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#333333"
+        android:fillViewport="true">
+        <LinearLayout
+            android:id="@+id/LinearLayout04"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <jp.co.proaxia_consulting.proaxiacom.view.attendance.AttendanceView
+                android:id="@+id/Attendance"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_weight="1">
+            </jp.co.proaxia_consulting.proaxiacom.view.attendance.AttendanceView>
+        </LinearLayout>
+    </jp.co.proaxia_consulting.proaxiacom.view.MotionableScrollView>
+</LinearLayout>
